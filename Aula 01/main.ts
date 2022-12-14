@@ -38,7 +38,4 @@ console.log(`Tipo de variavel prefencias ${typeof(preferencias)}`);
 
 console.log(`Meu nome é ${nome_completo} trabalho como ${profissao} goste de ${preferencias.join()}`);
 
-function exemplo(){
-
-}
 
