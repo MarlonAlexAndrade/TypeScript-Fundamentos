@@ -21,7 +21,7 @@ export class Professor {
     }
 
     get nome(): string {
-        return this.nome
+        return this._nome
     }
 
     set nome(valor: string) {
@@ -29,14 +29,14 @@ export class Professor {
     }
 
     get disciplina(): string {
-        return this.disciplina
+        return this._disciplina
     }
 
     set disciplina(valor: string) {
         this._disciplina = valor
     }
     get assuntos(): Array<string> {
-        return this.assuntos
+        return this._assuntos
 
     }
     set assuntos(valor: Array<string>) {
@@ -50,7 +50,7 @@ export class Professor {
   blablabla():string{
     let frase=""
     this.assuntos.forEach(assunto=>{
-        frase+=`Eu sei falar sobre${assunto} e vou ensnar nesse modulo${this.disciplina}`
+        frase+=`Eu sei falar sobre${assunto} e vou ensnar nesse modulo${this.disciplina} \n`
     })
     return frase
   }

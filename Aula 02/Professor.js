@@ -11,19 +11,19 @@ export class Professor {
         this._assuntos = assuntos;
     }
     get nome() {
-        return this.nome;
+        return this._nome;
     }
     set nome(valor) {
         this._nome = valor;
     }
     get disciplina() {
-        return this.disciplina;
+        return this._disciplina;
     }
     set disciplina(valor) {
         this._disciplina = valor;
     }
     get assuntos() {
-        return this.assuntos;
+        return this._assuntos;
     }
     set assuntos(valor) {
         this._assuntos = valor;
@@ -34,7 +34,7 @@ export class Professor {
     blablabla() {
         let frase = "";
         this.assuntos.forEach(assunto => {
-            frase += `Eu sei falar sobre${assunto} e vou ensnar nesse modulo${this.disciplina}`;
+            frase += `Eu sei falar sobre${assunto} e vou ensnar nesse modulo${this.disciplina} \n`;
         });
         return frase;
     }
