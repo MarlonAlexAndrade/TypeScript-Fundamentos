@@ -4,9 +4,10 @@ let estagiarios: Array<Estagiario>= new Array<Estagiario>
 
 $("#editar").hide()
 
-$("#limpar").on("click",function({
-
-}))
+$("#limpar").on("click",function(){
+    $("#nome").val("")
+    $("#idade").val("")
+})
 
 $("#adicionar").on("click",function(){
     let nome:string =String($("#nome").val()) 
@@ -22,8 +23,8 @@ function escreverTabela() {
     
     estagiarios.forEach(estagiario =>{
         $("<tr>").append(
-            $("<td>",{text:estagiario.nome})
+            $("<td>",{text:estagiario.nome}),
             $("<td>",{text:estagiario.idade})
-        ).appendTo("tbody");
+        ).appendTo("tbody")
     })
 }

@@ -1,7 +1,10 @@
 import { Estagiario } from "./Estagiario.js";
 let estagiarios = new Array;
 $("#editar").hide();
-$("#limpar").on("click", function ({}) { });
+$("#limpar").on("click", function () {
+    $("#nome").val("");
+    $("#idade").val("");
+});
 $("#adicionar").on("click", function () {
     let nome = String($("#nome").val());
     let idade = Number($("#idade").val());
