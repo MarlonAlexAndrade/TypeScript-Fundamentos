@@ -49,4 +49,5 @@ export class Trabalhador {
         this._salario = valor
     }
 
+    
 }

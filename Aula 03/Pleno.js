@@ -29,4 +29,7 @@ export class Pleno extends Trabalhador {
         });
         return frase;
     }
+    mentirSalario() {
+        return `Com a `;
+    }
 }

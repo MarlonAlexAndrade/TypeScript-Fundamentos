@@ -10,7 +10,7 @@ $("#limpar").on("click",function(){
 })
 
 $("#adicionar").on("click",function(){
-    let nome:string =String($("#nome").val()) 
+    let nome:string = String($("#nome").val()) 
     let idade:number = Number($("#idade").val())
 
     estagiarios.push(new Estagiario(nome,idade))

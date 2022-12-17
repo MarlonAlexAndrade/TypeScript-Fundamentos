@@ -48,4 +48,8 @@ export class Pleno extends Trabalhador {
         });
         return frase
     }
+
+    mentirSalario(): string{
+        return `Com a `
+    }
 }
